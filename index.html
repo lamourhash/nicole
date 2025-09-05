@@ -1,0 +1,1519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicole for KU - Visionary Leadership for Kenyatta University</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        :root {
+            --primary: #6A0DAD;
+            --primary-light: #8B45D9;
+            --primary-dark: #4C0099;
+            --accent: #FFD700;
+            --accent-dark: #E6C200;
+            --light: #F5F5F5;
+            --dark: #333333;
+            --text: #444444;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: #FFFFFF;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 14px 30px;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+            box-shadow: 0 4px 15px rgba(106, 13, 173, 0.3);
+        }
+        
+        .btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(106, 13, 173, 0.4);
+        }
+        
+        .btn-accent {
+            background: var(--accent);
+            color: var(--dark);
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+        }
+        
+        .btn-accent:hover {
+            background: var(--accent-dark);
+            box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+        
+        .btn-outline:hover {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .btn-donate {
+            background: var(--accent);
+            box-shadow: 0 4px 15px rgba(255, 51, 102, 0.3);
+            animation: pulse 2s infinite;
+        }
+        
+        .btn-donate:hover {
+            background:var(--accent-dark);
+            box-shadow: 0 6px 20px rgba(255, 51, 102, 0.4);
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        section {
+            padding: 60px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 5px;
+            background: var(--accent);
+            margin: 15px auto;
+            border-radius: 2px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo-icon {
+            width: 45px;
+            height: 45px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        
+        .logo-text {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: 0.5px;
+        }
+        
+        .logo-text span {
+            color: var(--accent);
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 30px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            transition: color 0.3s ease;
+            font-size: 0.95rem;
+            position: relative;
+        }
+        
+        .nav-links a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            left: 0;
+            bottom: -5px;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        
+        .nav-links a:hover:after {
+            width: 100%;
+        }
+        
+        .nav-links a.btn {
+            color: white;
+            padding: 10px 20px;
+        }
+        
+        .nav-links a.btn:after {
+            display: none;
+        }
+        
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: var(--primary);
+            z-index: 1001;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(106, 13, 173, 0.9), rgba(106, 13, 173, 0.8)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3') no-repeat center center/cover;
+            min-height: 100vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            padding: 100px 0 60px;
+        }
+        
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: white;
+            line-height: 1.2;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .mission-statement {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            padding: 15px;
+            background: rgba(255, 215, 0, 0.2);
+            border-left: 4px solid var(--accent);
+            border-radius: 4px;
+        }
+        
+        .hero p {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        /* Campaign Progress */
+        .campaign-progress {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 40px auto;
+            max-width: 800px;
+        }
+        
+        .progress-bar {
+            height: 20px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: var(--accent);
+            border-radius: 10px;
+            width: 65%; /* Represents 65% of goal reached */
+            position: relative;
+        }
+        
+        .progress-fill:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-image: linear-gradient(
+                -45deg,
+                rgba(255, 255, 255, 0.2) 25%,
+                transparent 25%,
+                transparent 50%,
+                rgba(255, 255, 255, 0.2) 50%,
+                rgba(255, 255, 255, 0.2) 75%,
+                transparent 75%,
+                transparent
+            );
+            z-index: 1;
+            background-size: 50px 50px;
+            animation: move 2s linear infinite;
+            border-radius: 10px;
+        }
+        
+        @keyframes move {
+            0% { background-position: 0 0; }
+            100% { background-position: 50px 50px; }
+        }
+        
+        .progress-stats {
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            font-weight: 600;
+        }
+        
+        /* About Section */
+        .about {
+            background: var(--light);
+        }
+        
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+        
+        .about-image {
+            width: 100%;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        
+        .about-image:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--primary-light) 0%, transparent 70%);
+            opacity: 0.2;
+            z-index: 1;
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+        
+        .about-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        .about-text {
+            width: 100%;
+        }
+        
+        .about-text h2 {
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .about-text h3 {
+            color: var(--primary-light);
+            margin-bottom: 15px;
+        }
+        
+        .highlight {
+            color: var(--primary);
+            font-weight: 600;
+        }
+        
+        /* Platform Section */
+        .platform-items {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+        }
+        
+        .platform-item {
+            background: white;
+            padding: 30px 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            text-align: center;
+            border-top: 5px solid var(--primary);
+        }
+        
+        .platform-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+        }
+        
+        .platform-item i {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            background: var(--light);
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            border-radius: 50%;
+            text-align: center;
+        }
+        
+        /* Values Section */
+        .values {
+            background: linear-gradient(to right, var(--primary), var(--primary-dark));
+            color: white;
+        }
+        
+        .values .section-title {
+            color: white;
+        }
+        
+        .values .section-title:after {
+            background: var(--accent);
+        }
+        
+        .values-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+        }
+        
+        .value-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .value-item i {
+            font-size: 2.2rem;
+            color: var(--accent);
+            margin-bottom: 20px;
+        }
+        
+        .value-item h3 {
+            color: white;
+        }
+        
+        /* Gallery Section */
+        .gallery {
+            background: var(--light);
+        }
+        
+        .gallery-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        
+        .gallery-item {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 250px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(106, 13, 173, 0.85);
+            color: white;
+            padding: 15px;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        .gallery-caption h4 {
+            margin-bottom: 5px;
+            color: var(--accent);
+            font-size: 1.1rem;
+        }
+        
+        .gallery-item:hover .gallery-caption {
+            transform: translateY(0);
+        }
+        
+        /* Student Endorsements Section */
+        .endorsements {
+            background: linear-gradient(to right, var(--primary-light), var(--primary-dark));
+            color: white;
+        }
+        
+        .endorsements .section-title {
+            color: white;
+        }
+        
+        .endorsements .section-title:after {
+            background: var(--accent);
+        }
+        
+        .endorsement-container {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding: 15px;
+            scrollbar-width: thin;
+        }
+        
+        .endorsement-card {
+            min-width: 280px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .endorsement-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .endorsement-text:before {
+            content: """;
+            position: absolute;
+            left: 0;
+            top: -15px;
+            font-size: 3.5rem;
+            color: var(--accent);
+            font-family: Arial, sans-serif;
+            opacity: 0.5;
+        }
+        
+        .endorsement-person {
+            display: flex;
+            align-items: center;
+        }
+        
+        .endorsement-person img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+            object-fit: cover;
+            border: 3px solid var(--accent);
+        }
+        
+        .endorsement-person-details h4 {
+            color: white;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+        
+        .endorsement-person-details p {
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+        
+        /* Events Slideshow Section */
+        .events {
+            background: var(--light);
+            position: relative;
+        }
+        
+        .events-slideshow {
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .events-slides {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        
+        .event-slide {
+            min-width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .event-image {
+            height: 250px;
+            overflow: hidden;
+        }
+        
+        .event-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .event-content {
+            padding: 25px;
+            background: white;
+            flex-grow: 1;
+        }
+        
+        .event-date {
+            background: var(--primary);
+            color: white;
+            padding: 8px 12px;
+            display: inline-block;
+            border-radius: 5px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+        
+        .event-content h3 {
+            margin-bottom: 15px;
+            color: var(--primary);
+            font-size: 1.3rem;
+        }
+        
+        .event-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 15px;
+            color: var(--primary);
+            font-size: 0.9rem;
+        }
+        
+        .event-meta i {
+            margin-right: 5px;
+        }
+        
+        .event-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.9);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 10;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .event-nav:hover {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .event-nav.prev {
+            left: 10px;
+        }
+        
+        .event-nav.next {
+            right: 10px;
+        }
+        
+        .event-dots {
+            display: flex;
+            justify-content: center;
+            margin-top: 25px;
+            gap: 10px;
+        }
+        
+        .event-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #ddd;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .event-dot.active {
+            background: var(--primary);
+            transform: scale(1.2);
+        }
+        
+        /* Newsletter Section */
+        .newsletter {
+            background: linear-gradient(to right, var(--primary-light), var(--primary-dark));
+            color: white;
+            text-align: center;
+        }
+        
+        .newsletter .section-title {
+            color: white;
+        }
+        
+        .newsletter-form {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .newsletter-input {
+            padding: 15px;
+            border: none;
+            border-radius: 50px;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        /* FAQ Section */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        .faq-question {
+            background: var(--primary);
+            color: white;
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+        }
+        
+        .faq-answer {
+            background: white;
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            padding: 20px;
+        }
+        
+        /* CTA Section */
+        .cta {
+            background: var(--accent);
+            text-align: center;
+            padding: 50px 0;
+        }
+        
+        .cta h2 {
+            color: var(--dark);
+            margin-bottom: 20px;
+        }
+        
+        .cta p {
+            max-width: 700px;
+            margin: 0 auto 30px;
+            font-size: 1.1rem;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 50px 0 20px;
+        }
+        
+        .footer-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-section {
+            text-align: center;
+        }
+        
+        .footer-section h3 {
+            color: var(--accent);
+            margin-bottom: 20px;
+        }
+        
+        .footer-section p {
+            margin-bottom: 15px;
+            opacity: 0.8;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            opacity: 0.7;
+        }
+        
+        /* Mobile Navigation Overlay */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 998;
+        }
+        
+        .overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        /* Responsive Styles */
+        @media (min-width: 768px) {
+            section {
+                padding: 80px 0;
+            }
+            
+            .platform-items {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .values-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .gallery-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .footer-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .about-content {
+                flex-direction: row;
+            }
+            
+            .newsletter-form {
+                flex-direction: row;
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .platform-items {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .values-container {
+                grid-template-columns: repeat(4, 1fr);
+            }
+            
+            .gallery-container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .footer-container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .hero h1 {
+                font-size: 3.5rem;
+            }
+            
+            .mission-statement {
+                font-size: 1.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.3rem;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .navbar {
+                padding: 12px 0;
+            }
+            
+            .nav-links {
+                position: fixed;
+                top: 0;
+                left: -100%;
+                width: 80%;
+                max-width: 300px;
+                height: 100vh;
+                background: white;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.5s ease;
+                gap: 30px;
+                box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
+                z-index: 999;
+            }
+            
+            .nav-links.active {
+                left: 0;
+            }
+            
+            .nav-links li {
+                margin: 0;
+            }
+            
+            .nav-links a {
+                font-size: 1.1rem;
+                padding: 10px 0;
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+            
+            .nav-links a:after {
+                bottom: 5px;
+            }
+            
+            .hamburger {
+                display: block;
+            }
+            
+            .hero {
+                padding: 80px 0 40px;
+                min-height: 90vh;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+                margin-bottom: 15px;
+            }
+            
+            .mission-statement {
+                font-size: 1.1rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+                margin-bottom: 30px;
+                padding: 0 10px;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+            
+            .btn {
+                padding: 12px 25px;
+                width: 100%;
+                max-width: 280px;
+                text-align: center;
+            }
+            
+            .section-title {
+                margin-bottom: 40px;
+                padding: 0 10px;
+            }
+            
+            .about-text, .about-image {
+                padding: 0 10px;
+            }
+            
+            .platform-item, .value-item {
+                padding: 25px 20px;
+            }
+            
+            .gallery-item {
+                height: 200px;
+            }
+            
+            .event-image {
+                height: 200px;
+            }
+            
+            .event-nav {
+                width: 35px;
+                height: 35px;
+            }
+            
+            .event-nav.prev {
+                left: 5px;
+            }
+            
+            .event-nav.next {
+                right: 5px;
+            }
+            
+            .progress-stats {
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .logo-text {
+                font-size: 1.2rem;
+            }
+            
+            .logo-icon {
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .mission-statement {
+                font-size: 1rem;
+                padding: 10px;
+            }
+            
+            .hero p {
+                font-size: 0.95rem;
+            }
+            
+            .about-image {
+                margin-bottom: 30px;
+            }
+            
+            .platform-item i {
+                font-size: 2.2rem;
+                width: 60px;
+                height: 60px;
+                line-height: 60px;
+            }
+            
+            .value-item i {
+                font-size: 2rem;
+            }
+            
+            .campaign-progress {
+                padding: 15px;
+            }
+        }
+        
+        @media (max-width: 400px) {
+            .hero h1 {
+                font-size: 1.6rem;
+            }
+            
+            .btn {
+                padding: 10px 20px;
+                font-size: 0.85rem;
+            }
+            
+            .endorsement-card {
+                min-width: 250px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <div class="logo-icon">N</div>
+                    <div class="logo-text">Nicole <span>For KU</span></div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#platform">Platform</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#contact" class="btn btn-donate">Get Involved</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+        <div class="overlay"></div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Vote for <span style="color: var(--accent)">Nicole</span>: Your Voice for Change at Kenyatta University</h1>
+                
+                <div class="mission-statement">
+                    "Empowering Students, Transforming KU: Together We Build the Future"
+                </div>
+                
+                <p>Join the movement for transparent leadership, student empowerment, and a brighter future for all KU students.</p>
+                
+                <div class="hero-buttons">
+                    <a href="#platform" class="btn btn-accent">Learn My Vision</a>
+                    <a href="#events" class="btn btn-outline">Upcoming Events</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Meet Nicole</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Nicole - KU Student Leader">
+                </div>
+                <div class="about-text">
+                    <h3>Your Candidate for Student Representation</h3>
+                    <p>Hello fellow students! I'm Nicole, a third-year Law student at Kenyatta University, and I'm running to be your next Student Representative.</p>
+                    <p>My journey at KU has shown me both the incredible potential of our student body and the areas where we need stronger advocacy. I've served in various leadership roles, including Class Representative and Legal Aid Club Secretary, where I've fought for student rights and organized successful campus initiatives.</p>
+                    <p>I believe in <span class="highlight">action over empty promises</span>, <span class="highlight">inclusion over exclusion</span>, and <span class="highlight">progress over stagnation</span>. Together, we can build a Kenyatta University that works for all students.</p>
+                    <a href="#contact" class="btn">Join My Campaign</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Section -->
+    <section id="platform" class="platform">
+        <div class="container">
+            <h2 class="section-title">My Vision for KU</h2>
+            <div class="platform-items">
+                <div class="platform-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Academic Excellence</h3>
+                    <p>Advocate for improved learning resources, better library hours, and increased access to digital materials for all students.</p>
+                </div>
+                <div class="platform-item">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <h3>Financial Transparency</h3>
+                    <p>Ensure student funds are allocated fairly and transparently, with regular reports on how money is being spent.</p>
+                </div>
+                <div class="platform-item">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Campus Amenities</h3>
+                    <p>Improve hostel conditions, food services, and recreational facilities to enhance student life on campus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Campus Involvement</h2>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Nicole at Campus Event">
+                    <div class="gallery-caption">
+                        <h4>Student Forum Discussion</h4>
+                        <p>Addressing student concerns at the main campus forum</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Nicole with students">
+                    <div class="gallery-caption">
+                        <h4>Meeting with Students</h4>
+                        <p>Listening to ideas and concerns from fellow students</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Nicole studying">
+                    <div class="gallery-caption">
+                        <h4>Library Initiative</h4>
+                        <p>Advocating for extended library hours and better resources</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Slideshow Section -->
+    <section id="events" class="events">
+        <div class="container">
+            <h2 class="section-title">Upcoming Events</h2>
+            
+            <div class="events-slideshow">
+                <div class="events-slides">
+                    <!-- Event 1 -->
+                    <div class="event-slide">
+                        <div class="event-image">
+                            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Meet & Greet Event">
+                        </div>
+                        <div class="event-content">
+                            <div class="event-date">March 15, 2023</div>
+                            <h3>Meet & Greet at Main Campus</h3>
+                            <div class="event-meta">
+                                <span><i class="fas fa-clock"></i> 2:00 PM - 4:00 PM</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Student Center</span>
+                            </div>
+                            <p>Come meet Nicole and discuss your ideas for improving student life at KU. This is a great opportunity to share your concerns and suggestions directly with Nicole.</p>
+                            <a href="#rsvp" class="btn">RSVP Now</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Event 2 -->
+                    <div class="event-slide">
+                        <div class="event-image">
+                            <img src="https://images.unsplash.com/photo-1551818255-e6e109c4c5f9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Debate Night">
+                        </div>
+                        <div class="event-content">
+                            <div class="event-date">March 22, 2023</div>
+                            <h3>Debate Night</h3>
+                            <div class="event-meta">
+                                <span><i class="fas fa-clock"></i> 6:00 PM - 8:00 PM</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Auditorium B</span>
+                            </div>
+                            <p>Watch Nicole debate other candidates on important student issues. This is your chance to see how Nicole's platform compares to other candidates.</p>
+                            <a href="#rsvp" class="btn">RSVP Now</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Event 3 -->
+                    <div class="event-slide">
+                        <div class="event-image">
+                            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Voter Registration Drive">
+                        </div>
+                        <div class="event-content">
+                            <div class="event-date">March 30, 2023</div>
+                            <h3>Voter Registration Drive</h3>
+                            <div class="event-meta">
+                                <span><i class="fas fa-clock"></i> 10:00 AM - 4:00 PM</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Library Plaza</span>
+                            </div>
+                            <p>Join us to ensure every student is registered to vote in the upcoming elections. Your vote is your voice - make sure it's heard!</p>
+                            <a href="#volunteer" class="btn">Volunteer</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation arrows -->
+                <div class="event-nav prev">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="event-nav next">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+            
+            <!-- Dots indicator -->
+            <div class="event-dots">
+                <div class="event-dot active" data-index="0"></div>
+                <div class="event-dot" data-index="1"></div>
+                <div class="event-dot" data-index="2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Endorsements Section -->
+    <section id="endorsements" class="endorsements">
+        <div class="container">
+            <h2 class="section-title">Student Endorsements</h2>
+            <div class="endorsement-container">
+                <div class="endorsement-card">
+                    <div class="endorsement-text">
+                        Nicole has consistently shown dedication to addressing student concerns. Her work on the library extension project demonstrated her ability to get things done.
+                    </div>
+                    <div class="endorsement-person">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Student">
+                        <div class="endorsement-person-details">
+                            <h4>Sarah Wanjiku</h4>
+                            <p>3rd Year, Education</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="endorsement-card">
+                    <div class="endorsement-text">
+                        I've worked with Nicole on the student welfare committee, and I'm impressed by her integrity and commitment to transparent leadership.
+                    </div>
+                    <div class="endorsement-person">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Student">
+                        <div class="endorsement-person-details">
+                            <h4>James Mwangi</h4>
+                            <p>4th Year, Business</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2 class="section-title">Stay Updated</h2>
+            <p>Join our newsletter to receive campaign updates and event invitations.</p>
+            <form class="newsletter-form">
+                <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                <button type="submit" class="btn btn-accent">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready for Change at KU?</h2>
+            <p>Join hundreds of students who have already committed to voting for Nicole. Together, we can create a Kenyatta University that works for all students.</p>
+            <a href="#contact" class="btn btn-donate">Support Our Campaign</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>Nicole For KU</h3>
+                    <p>Dedicated to serving the students of Kenyatta University with integrity, transparency, and vision.</p>
+                    <p>Together, we can build a better KU!</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Kenyatta University, Nairobi</p>
+                    <p><i class="fas fa-envelope"></i> nicole@nicoleforku.com</p>
+                    <p><i class="fas fa-phone"></i> +254 712 345 678</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <p>Follow us on social media for campaign updates:</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Nicole For KU. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        const overlay = document.querySelector('.overlay');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            overlay.classList.toggle('active');
+            hamburger.innerHTML = navLinks.classList.contains('active') ? 
+                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Close mobile nav when clicking on a link or overlay
+        document.querySelectorAll('.nav-links a, .overlay').forEach(element => {
+            element.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                overlay.classList.remove('active');
+                hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+        
+        // Sticky header on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 50);
+        });
+        
+        // Adjust hero section height on mobile
+        function adjustHeroHeight() {
+            const hero = document.querySelector('.hero');
+            if (window.innerWidth < 768) {
+                hero.style.minHeight = `${window.innerHeight}px`;
+            } else {
+                hero.style.minHeight = '100vh';
+            }
+        }
+        
+        // Events Slideshow functionality
+        const eventsSlides = document.querySelector('.events-slides');
+        const eventSlides = document.querySelectorAll('.event-slide');
+        const prevBtn = document.querySelector('.event-nav.prev');
+        const nextBtn = document.querySelector('.event-nav.next');
+        const dots = document.querySelectorAll('.event-dot');
+        
+        let currentSlide = 0;
+        const slideCount = eventSlides.length;
+        
+        // Function to update slideshow
+        function updateSlide() {
+            eventsSlides.style.transform = `translateX(-${currentSlide * 100}%)`;
+            
+            // Update active dot
+            dots.forEach((dot, index) => {
+                if (index === currentSlide) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
+            });
+        }
+        
+        // Next slide
+        nextBtn.addEventListener('click', () => {
+            currentSlide = (currentSlide + 1) % slideCount;
+            updateSlide();
+        });
+        
+        // Previous slide
+        prevBtn.addEventListener('click', () => {
+            currentSlide = (currentSlide - 1 + slideCount) % slideCount;
+            updateSlide();
+        });
+        
+        // Dot navigation
+        dots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                currentSlide = parseInt(dot.getAttribute('data-index'));
+                updateSlide();
+            });
+        });
+        
+        // Auto slide every 5 seconds
+        setInterval(() => {
+            currentSlide = (currentSlide + 1) % slideCount;
+            updateSlide();
+        }, 5000);
+        
+        // Simple form validation
+        const newsletterForm = document.querySelector('.newsletter-form');
+        
+        newsletterForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const emailInput = newsletterForm.querySelector('input[type="email"]');
+            
+            if (emailInput.value && emailInput.value.includes('@')) {
+                alert('Thank you for subscribing to our newsletter!');
+                emailInput.value = '';
+            } else {
+                alert('Please enter a valid email address.');
+            }
+        });
+        
+        // Initial call
+        adjustHeroHeight();
+        
+        // Adjust on resize
+        window.addEventListener('resize', adjustHeroHeight);
+    </script>
+</body>
+</html>
